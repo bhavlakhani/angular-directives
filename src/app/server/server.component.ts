@@ -10,6 +10,7 @@ allowNewServer =false;
 serverCreationStatus = "No server created yet";
 serverName ="TestServer";
 serverCreated = false;
+servers = ['TestServer','TestServer 2'];
 
 
   constructor() {
@@ -24,6 +25,7 @@ serverCreated = false;
 
   onCreateServer(){
     this.serverCreated = true;
+    this.servers.push(this.serverName);
     this.serverCreationStatus = "server created and name is" + this.serverName
   }
 

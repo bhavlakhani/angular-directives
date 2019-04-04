@@ -3,7 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-serverstyle',
   templateUrl: './serverstyle.component.html',
-  styleUrls: ['./serverstyle.component.css']
+  styles: [`
+  .online{
+    color: white;
+  }`]
 })
 export class ServerstyleComponent implements OnInit {
 
